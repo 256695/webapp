@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Diary App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <link rel="apple-touch-icon" href="favicon.png">
+        <meta name="apple-mobile-web-app-title" content="">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="scripts.js" async defer></script>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+
+    <title>My Diary App</title>
+  </head>
+  <body>
+    <header><h1 class="title">My Personal Journal</h1></header>
+
+    <!-- Journal Entry Section -->
+    <section class="section journal-section">
+      <div class="container">
+        <div class="container-row container-row-journal">
+          <div class="container-item container-item-journal">
+            <form id="entryForm" action="">
+              <label for="entry-title" class="journal-label">Entry Title</label>
+              <input
+                type="text"
+                name="entry-title"
+                id="entry-title"
+                class="entry-text-title"
+                placeholder="Name of entry"
+              />
+              <label for="entry" class="journal-label">Today's Entry</label>
+              <textarea
+                name="daily-entry"
+                id="entry"
+                class="entry-text-box"
+                placeholder="What's on your mind today?"
+              ></textarea>
+              <button class="btn-main entry-submit-btn" type="submit">SUBMIT</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journal Entry Results -->
+    <section class="section sectionEntryResults" id="entryResultsSection">
+      <div class="container">
+        <div class="container-row entryResultRow"></div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
